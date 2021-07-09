@@ -1,0 +1,254 @@
+<html>
+<meta charset="utf-8">
+<style>
+    .title {
+        font-size: 1em;
+        margin-bottom: 10px;
+    }
+
+    .information {
+        font-size: 0.8em;
+    }
+
+    .margin-top-5 {
+        margin-top: 5px;
+    }
+
+    .margin-top-10 {
+        margin-top: 10px;
+    }
+
+    .dpe {
+        font-family: sans-serif;
+        color: #555;
+        width: 420px;
+        font-size: 12px;
+        padding: 10px;
+    }
+
+    .dpe .letters {
+        color: white;
+        width: 200px;
+        display: inline-table;
+        font-weight: bold;
+        text-shadow: 1px 0 black;
+    }
+
+    .dpe .letters > div {
+        overflow: hidden;
+        height: 25px;
+        margin-bottom: 0.4em;
+        width: 100%;
+    }
+
+    .dpe .letters > div .line {
+        position: relative;
+        padding: 0.5em;
+        border-radius: 0 12px 12px 0;
+    }
+
+    .dpe .letters > div.active {
+        height: 36px;
+        font-size: 18px;
+        font-weight: bold;
+        text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    }
+
+    .dpe .letters > div.active .line {
+        padding-top: 6px;
+        padding-bottom: 6px;
+    }
+
+    .dpe .letters > div.active .line::after {
+        content: "";
+        display: inline-block;
+        height: 2px;
+        position: relative;
+        vertical-align: middle;
+        top: -10px;
+        width: 200px;
+        margin-left: 100%
+    }
+
+    .dpe .letter-a .line {
+        width: 10%;
+    }
+
+    .dpe .letter-a .line, .dpe .letter-a .line::after {
+        background-color: #309c6c;
+    }
+
+    .dpe .letter-b .line {
+        width: 20%;
+    }
+
+    .dpe .letter-b .line, .dpe .letter-b .line::after {
+        background-color: #5fb14e;
+    }
+
+    .dpe .letter-c .line {
+        width: 30%;
+    }
+
+    .dpe .letter-c .line, .dpe .letter-c .line::after {
+        background-color: #80bd73;
+    }
+
+    .dpe .letter-d .line {
+        width: 40%;
+    }
+
+    .dpe .letter-d .line, .dpe .letter-d .line::after {
+        background-color: #f2e600;
+    }
+
+    .dpe .letter-e .line {
+        width: 50%;
+    }
+
+    .dpe .letter-e .line, .dpe .letter-e .line::after {
+        background-color: #eab400;
+    }
+
+    .dpe .letter-f .line {
+        width: 60%;
+    }
+
+    .dpe .letter-f .line, .dpe .letter-f .line::after {
+        background-color: #e3812a;
+    }
+
+    .dpe .letter-g .line {
+        width: 70%;
+    }
+
+    .dpe .letter-g .line, .dpe .letter-g .line::after {
+        background-color: #ce1e15;
+    }
+
+    .dpe .info-box {
+        color: black;
+        display: inline-table;
+        height: 220px;
+    }
+
+    .dpe .info-box-content {
+        width: 180px;
+        position: relative;
+        text-align: center;
+        border: 2px solid lightgray;
+        border-radius: 10px;
+    }
+
+    .dpe .info-box-content .value-title {
+        margin-top: 20px;
+        margin-bottom: 0;
+    }
+
+    .dpe .info-box-content .value-data {
+        margin-top: 5px;
+    }
+
+    .dpe .info-box-content .value-data span {
+        font-size: 16px;
+        font-weight: bold;
+    }
+
+    .info-box-content.position-a {
+        top: 0;
+        border-color: #309c6c;
+    }
+
+    .info-box-content.position-b {
+        top: 0;
+        border-color: #5fb14e
+    }
+
+    .info-box-content.position-c {
+        top: 30px;
+        border-color: #80bd73
+    }
+
+    .info-box-content.position-d {
+        top: 50px;
+        border-color: #f2e600
+    }
+
+    .info-box-content.position-e {
+        top: 80px;
+        border-color: #eab400
+    }
+
+    .info-box-content.position-f {
+        top: 80px;
+        border-color: #e3812a
+    }
+
+    .info-box-content.position-g {
+        top: 80px;
+        border-color: #ce1e15
+    }
+</style>
+
+<body>
+
+<div class="dpe">
+
+    <div class="title">
+        <strong>Diagnostic de performance énergétique (DPE)</strong>
+    </div>
+    <div class="information">
+        <em>logement très performant</em>
+    </div>
+
+    <div class="letters">
+        <div class="letter-a">
+            <div class="line">A</div>
+        </div>
+        <div class="letter-b">
+            <div class="line">B</div>
+        </div>
+        <div class="letter-c">
+            <div class="line">C</div>
+        </div>
+        <div class="letter-d active">
+            <div class="line">D</div>
+        </div>
+        <div class="letter-e">
+            <div class="line">E</div>
+        </div>
+        <div class="letter-f">
+            <div class="line">F</div>
+        </div>
+        <div class="letter-g">
+            <div class="line">G</div>
+        </div>
+    </div><div class="info-box"> <!-- begin & end on same line to avoid space between elements -->
+        <div class="info-box-content position-d">
+            <p class="value-title">
+                <strong>consommation</strong><br>
+                <em>(énergie primaire)</em>
+            </p>
+            <p class="value-data">
+                <span>216</span> <em>kWh/m2.an</em>
+            </p>
+            <p class="value-title">
+                <strong>émissions</strong><br>
+            </p>
+            <p class="value-data">
+                <span>52</span> <em>kg CO₂/m².an</em>
+            </p>
+        </div>
+    </div>
+    <div class="information margin-top-5">
+        <em>logement extrêmement consommateur d’énergie</em>
+    </div>
+    <div class="margin-top-10">
+        Diagnostic réalisé [avant/après] le 1er Juillet 2021
+    </div>
+</div>
+
+
+</body>
+
+</html>

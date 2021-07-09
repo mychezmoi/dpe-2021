@@ -1,0 +1,224 @@
+<html>
+<meta charset="utf-8">
+<style>
+    .title {
+        font-size: 1em;
+        margin-bottom: 10px;
+    }
+
+    .information {
+        font-size: 0.8em;
+    }
+
+    .ges {
+        font-family: sans-serif;
+        color: #555;
+        width: 420px;
+        font-size: 12px;
+        padding: 10px;
+    }
+
+    .ges .letters {
+        color: white;
+        width: 200px;
+        display: inline-table;
+        font-weight: bold;
+        text-shadow: 1px 0 black;
+    }
+
+    .ges .letters > div {
+        overflow: hidden;
+        height: 25px;
+        margin-bottom: 0.4em;
+        width: 100%;
+    }
+
+    .ges .letters > div .line {
+        position: relative;
+        padding: 0.5em;
+        border-radius: 0 12px 12px 0;
+    }
+
+    .ges .letters > div.active {
+        height: 36px;
+        font-size: 18px;
+        font-weight: bold;
+        text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    }
+
+    .ges .letters > div.active .line {
+        padding-top: 6px;
+        padding-bottom: 6px;
+    }
+
+    .ges .letters > div.active .line::after {
+        content: "";
+        display: inline-block;
+        height: 2px;
+        position: relative;
+        vertical-align: middle;
+        top: -10px;
+        width: 200px;
+        margin-left:100%
+    }
+
+    .ges .letter-a .line {
+        width: 10%;
+    }
+
+    .ges .letter-a .line, .ges .letter-a .line::after {
+        background-color: #abdbf9;
+    }
+
+    .ges .letter-b .line {
+        width: 20%;
+    }
+
+    .ges .letter-b .line, .ges .letter-b .line::after {
+        background-color: #91b4d4;
+    }
+
+    .ges .letter-c .line {
+        width: 30%;
+    }
+
+    .ges .letter-c .line, .ges .letter-c .line::after {
+        background-color: #7a92b2;
+    }
+
+    .ges .letter-d .line {
+        width: 40%;
+    }
+
+    .ges .letter-d .line, .ges .letter-d .line::after {
+        background-color: #626f90;
+    }
+
+    .ges .letter-e .line {
+        width: 50%;
+    }
+
+    .ges .letter-e .line, .ges .letter-e .line::after {
+        background-color: #4e5272;
+    }
+
+    .ges .letter-f .line {
+        width: 60%;
+    }
+
+    .ges .letter-f .line, .ges .letter-f .line::after {
+        background-color: #393552;
+    }
+
+    .ges .letter-g .line {
+        width: 70%;
+    }
+
+    .ges .letter-g .line, .ges .letter-g .line::after {
+        background-color: #271b36;
+    }
+
+    .ges .info-box {
+        color: black;
+        display: inline-table;
+        height: 220px;
+    }
+
+    .ges .info-box-content {
+        width: 180px;
+        position: relative;
+        text-align: center;
+        border: 2px solid lightgray;
+        border-radius: 10px;
+    }
+
+    .ges .info-box-content .value {
+        font-size: 16px;
+        font-weight: bold;
+    }
+
+    .info-box-content.position-a {
+        top: 0px;
+        border-color: #abdbf9;
+    }
+
+    .info-box-content.position-b {
+        top: 35px;
+        border-color: #91b4d4
+    }
+
+    .info-box-content.position-c {
+        top: 65px;
+        border-color: #7a92b2
+    }
+
+    .info-box-content.position-d {
+        top: 95px;
+        border-color: #626f90
+    }
+
+    .info-box-content.position-e {
+        top: 125px;
+        border-color: #4e5272
+    }
+
+    .info-box-content.position-f {
+        top: 155px;
+        border-color: #393552
+    }
+
+    .info-box-content.position-g {
+        top: 185px;
+        border-color: #271b36
+    }
+</style>
+
+<body>
+
+<div class="ges">
+
+    <div class="title">
+        <strong>*Dont émissions de gaz à effet de serre</strong>
+    </div>
+    <div>
+        <em class="left information">peu d'émissions de CO₂</em>
+    </div>
+
+    <div class="letters">
+        <div class="letter-a">
+            <div class="line">A</div>
+        </div>
+        <div class="letter-b">
+            <div class="line">B</div>
+        </div>
+        <div class="letter-c">
+            <div class="line">C</div>
+        </div>
+        <div class="letter-d active">
+            <div class="line">D</div>
+        </div>
+        <div class="letter-e">
+            <div class="line">E</div>
+        </div>
+        <div class="letter-f">
+            <div class="line">F</div>
+        </div>
+        <div class="letter-g">
+            <div class="line">G</div>
+        </div>
+    </div><div class="info-box"> <!-- begin & end on same line to avoid space between elements -->
+        <div class="info-box-content position-d">
+            <p>
+                <span class="value">52</span> <em>kg CO₂/m².an</em>
+            </p>
+        </div>
+    </div>
+    <div>
+        <em class="information">émissions de CO₂ très importantes</em>
+    </div>
+</div>
+
+
+</body>
+
+</html>
